@@ -1,12 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './components/App';
 import Register from './components/Auth/Register';
 import Login from './components/Auth/Login';
 import * as serviceWorker from './serviceWorker';
-
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import 'semantic-ui-css/semantic.min.css'
 
 const Root = () => (
   <Router>
@@ -19,9 +18,7 @@ const Root = () => (
 )
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Root />
-  </React.StrictMode>,
+    <Root />,
   document.getElementById('root')
 );
 
